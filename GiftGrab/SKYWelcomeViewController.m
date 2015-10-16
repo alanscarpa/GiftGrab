@@ -9,18 +9,29 @@
 #import "SKYWelcomeViewController.h"
 
 @interface SKYWelcomeViewController ()
+@property (weak, nonatomic) IBOutlet UIView *bodyTextContainerView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
 
 @implementation SKYWelcomeViewController
 
+#pragma mark - View Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self configureUI];
 }
 
-- (void)configureUI {
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self animateUI];
+}
 
+- (void)animateUI {
+    [UIView animateWithDuration:1.0 animations:^{
+        self.bodyTextContainerView.alpha = 1.0;
+        self.titleLabel.center = CGPointMake(self.view.frame.size.width/2, 40);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
