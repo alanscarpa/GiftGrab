@@ -10,6 +10,7 @@
 #import "SKYButton.h"
 
 @interface SKYWelcomeViewController ()
+
 @property (weak, nonatomic) IBOutlet UIView *bodyTextContainerView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet SKYButton *getStartedButton;
@@ -41,11 +42,6 @@
     } completion:^(BOOL finished) {
         nil;
     }];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

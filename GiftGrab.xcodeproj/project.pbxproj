@@ -17,6 +17,7 @@
 		450EAA971BD05F5A0068B672 /* SignPainter.otf in Resources */ = {isa = PBXBuildFile; fileRef = 450EAA951BD05F5A0068B672 /* SignPainter.otf */; settings = {ASSET_TAGS = (); }; };
 		450EAA991BD05FFD0068B672 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 450EAA981BD05FFD0068B672 /* Quicksand-Regular.ttf */; settings = {ASSET_TAGS = (); }; };
 		45CF93881BD28E5C0024C378 /* SKYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF93871BD28E5C0024C378 /* SKYButton.m */; settings = {ASSET_TAGS = (); }; };
+		45CF93901BD3E40F0024C378 /* SKYConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF938F1BD3E40F0024C378 /* SKYConstants.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		450EAA981BD05FFD0068B672 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		45CF93861BD28E5C0024C378 /* SKYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYButton.h; sourceTree = "<group>"; };
 		45CF93871BD28E5C0024C378 /* SKYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYButton.m; sourceTree = "<group>"; };
+		45CF938E1BD3E40F0024C378 /* SKYConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKYConstants.h; sourceTree = "<group>"; };
+		45CF938F1BD3E40F0024C378 /* SKYConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKYConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		450EAA7A1BCFD3A90068B672 /* GiftGrab */ = {
 			isa = PBXGroup;
 			children = (
+				45CF938D1BD3E3F90024C378 /* Constants */,
 				45CF93851BD28E460024C378 /* Style Classes */,
 				450EAA941BD05F5A0068B672 /* Quicksand-Light.ttf */,
 				450EAA951BD05F5A0068B672 /* SignPainter.otf */,
@@ -115,6 +119,15 @@
 				45CF93871BD28E5C0024C378 /* SKYButton.m */,
 			);
 			name = "Style Classes";
+			sourceTree = "<group>";
+		};
+		45CF938D1BD3E3F90024C378 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				45CF938E1BD3E40F0024C378 /* SKYConstants.h */,
+				45CF938F1BD3E40F0024C378 /* SKYConstants.m */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +206,7 @@
 				450EAA831BCFD3A90068B672 /* SKYWelcomeViewController.m in Sources */,
 				45CF93881BD28E5C0024C378 /* SKYButton.m in Sources */,
 				450EAA801BCFD3A90068B672 /* AppDelegate.m in Sources */,
+				45CF93901BD3E40F0024C378 /* SKYConstants.m in Sources */,
 				450EAA7D1BCFD3A90068B672 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
